@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: family
+  namespace: family
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: family.k8s1.bjethwan.xyz
+    http:
+      paths:
+      - path: /bipin
+        backend:
+          serviceName: bipin
+          servicePort: 80
+      - path: /neha
+        backend:
+          serviceName: neha
+          servicePort: 80
+      - path: /shaurya
+        backend:
+          serviceName: shaurya
+          servicePort: 80
