@@ -3,8 +3,8 @@ kind: Ingress
 metadata:
   annotations:
     nginx.ingress.kubernetes.io/app-root: /
-    name: family-shaurya
-    namespace: family
+  name: family-shaurya
+  namespace: family
 spec:
   rules:
   - host: family-shaurya.k8s1.bjethwan.xyz
