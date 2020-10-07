@@ -3,8 +3,8 @@ kind: Ingress
 metadata:
   annotations:
     nginx.ingress.kubernetes.io/app-root: /
-    name: family-neha
-    namespace: family
+  name: family-neha
+  namespace: family
 spec:
   rules:
   - host: family-neha.k8s1.bjethwan.xyz
